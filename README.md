@@ -15,9 +15,9 @@ Team Members and roles
 
 1.- Claudia Salgado   -Frontend
 
-2.- Monserrat Soto    -Data Science
+2.- Montserrat Soto    -Data Science
 
-3.- Silvia Orduñes    -DevOps
+3.- Silvia Orduña    -DevOps
 
 4.- Efrén Bautista    -Backend
 
