@@ -10,6 +10,7 @@ Plan project
 https://docs.google.com/spreadsheets/d/1fKjObQezazANC6udPG4G0Qb_zTEAN86eh3tyKwUPiE0/edit?usp=sharing
 
 
+
 Team Members and roles 
 
 1.- Claudia Becerra   -Frontend
@@ -19,6 +20,7 @@ Team Members and roles
 3.- Silvia Orduñes    -DevOps
 
 4.- Efrén Bautista    -Backend
+
 
 
 Minutes
