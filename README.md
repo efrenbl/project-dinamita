@@ -13,7 +13,7 @@ https://docs.google.com/spreadsheets/d/1fKjObQezazANC6udPG4G0Qb_zTEAN86eh3tyKwUP
 
 Team Members and roles 
 
-1.- Claudia Becerra   -Frontend
+1.- Claudia Salgado   -Frontend
 
 2.- Monserrat Soto    -Data Science
 
