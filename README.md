@@ -1,7 +1,8 @@
 # project-dinamita
 
 Project: Platzi Noticias
-Desciption Name: Web application that collects and posts news daily.
+
+Description Name: Web application that collects and posts news daily.
 
 Plan project
 https://docs.google.com/spreadsheets/d/1fKjObQezazANC6udPG4G0Qb_zTEAN86eh3tyKwUPiE0/edit?usp=sharing
