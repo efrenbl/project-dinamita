@@ -27,4 +27,8 @@ Minutes
 
 1.- Discovery Session
 
+https://docs.google.com/document/d/1bJGyzoZi1Iu7JHNuFyRRLy2fWzEOupVK_5-EZHt9CSc/edit?usp=sharing
+
+
+
 2.- Kickoff
