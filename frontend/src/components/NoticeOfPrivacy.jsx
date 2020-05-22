@@ -16,7 +16,7 @@ const NoticeOfPrivacy = () => (
 
     </div>
 
-    <div>
+    <div className='content__privacy'>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem sunt cum esse
         accusamus molestiae id culpa nam, sed mollitia repudiandae! Quae ipsam perspiciatis
