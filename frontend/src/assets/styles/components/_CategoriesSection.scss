@@ -1,4 +1,27 @@
-.seccion1{
+.political{
     width: 100%;
-    height: auto;
+    height: 100vw;
+   
+
+    &__section{
+        display: flex;
+        color: white;
+        justify-content: space-between;
+
+        &-title{
+            width: 40%;
+            height: 50;
+            background-color: black;
+            font-size: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+            p{
+                margin: 0;
+            }
+        }
+    }
+
 }
+
