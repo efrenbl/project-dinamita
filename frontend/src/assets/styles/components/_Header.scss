@@ -37,11 +37,18 @@
                height: 50px;
                align-items: center;
                justify-content: center;
-
-               a{
-                   color: black;
-                   text-decoration: none;
-               }
+               
+               &:hover {
+                border-radius: 15px;
+                border:2px solid red;
+                -webkit-transform: scale(1);
+                transform: scale(1.2)
+           }
+            }
+             a{
+                 color: black;
+                 text-decoration: none;
+                   
             }
            
         }
