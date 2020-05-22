@@ -2,12 +2,12 @@ import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
-import CategoriesSection from '../components/CategoriesSection';
+import NoticeOfPrivacy from '../components/NoticeOfPrivacy';
 
 const Home = () => (
   <div className='Home'>
     <Header />
-    <CategoriesSection />
+    <NoticeOfPrivacy />
     <Footer />
 
   </div>
