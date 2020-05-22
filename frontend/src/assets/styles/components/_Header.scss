@@ -28,6 +28,11 @@
                height: 50px;
                align-items: center;
                justify-content: center;
+
+               a{
+                   color: black;
+                   text-decoration: none;
+               }
             }
            
         }
@@ -36,5 +41,10 @@
 
 .loguin{
     background-color: black;
-    color: white;
+    
+    a{
+        color: white;
+        text-decoration: none;
+    }
+
 }
