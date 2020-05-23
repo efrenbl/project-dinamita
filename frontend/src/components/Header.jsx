@@ -3,11 +3,28 @@ import React from 'react';
 const Header = () => (
 
   <header className='header'>
-    <div className='header_menu'>
-      <p>
-        Hola soy un header de prueba &#128147;
+    <div>
+      <p>logo</p>
+    </div>
 
-      </p>
+    <div>
+      <input
+        type='text'
+        className='header__search'
+        placeholder=' Buscar...'
+      />
+    </div>
+    <div className='header__menu'>
+      <ul className='header__menu-items'>
+        <li className='header__menu-items--item'>
+          <a href='#'>Acerca de </a>
+          {' '}
+        </li>
+        <li className='header__menu-items--item loguin'>
+          {' '}
+          <a href='#'>Iniciar sesión </a>
+        </li>
+      </ul>
     </div>
   </header>
 
