@@ -3,7 +3,7 @@ import arrow from '../assets/static/arrow.svg';
 import triangulos2 from '../assets/static/triangulos2.svg';
 
 const NoticeOfPrivacy = () => (
-  <section className='head'>
+  <section>
     <div className='head__section'>
       <div className='head__section-title'>
         <p>Aviso de privasidad</p>
@@ -13,7 +13,7 @@ const NoticeOfPrivacy = () => (
         <img className='arrow' src={triangulos2} alt='arrow' />
       </div>
     </div>
-    <div className='privacy'>
+    <div className='container__privacy'>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque quis voluptatum corrupti distinctio necessitatibus rem obcaecati mollitia. Soluta, aliquid asperiores. Voluptates facere incidunt reiciendis voluptatibus
 

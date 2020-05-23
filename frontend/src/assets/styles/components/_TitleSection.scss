@@ -1,24 +1,21 @@
-.head{
-   height: 86px;
-       &__section{
+.head__section{
+    display: flex;
+    color: white;
+    justify-content: space-between;
+
+    &-title{
+        width: 40%;
+        height: 50;
+        background-color: #0F0740;
+        font-size: 1.5rem;
         display: flex;
-        color: white;
-        justify-content: space-between;
+        align-items: center;
+        justify-content: space-around;
 
-        &-title{
-            width: 40%;
-            height: 50;
-            background-color: #0F0740;
-            font-size: 1.5rem;
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-
-            p{
-                margin: 0;
-            }
+        p{
+            margin: 0;
         }
     }
-
 }
+
 
