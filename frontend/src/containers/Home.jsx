@@ -1,12 +1,12 @@
 import React from 'react';
 import Header from '../components/Header';
 
-import NoticeOfPrivacy from '../components/NoticeOfPrivacy';
+import About from '../components/About';
 
 const Home = () => (
   <div className='Home'>
     <Header />
-    <NoticeOfPrivacy />
+    <About />
 
   </div>
 );
