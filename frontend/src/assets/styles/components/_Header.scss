@@ -29,7 +29,7 @@
             &--item{
                width: 40%;
                display: flex;
-               border:2px solid black;
+               border:2px solid #0F0740;
                margin-left: 30px;
                text-align: center;
                font-weight: bold;
@@ -40,13 +40,13 @@
                
                &:hover {
                 border-radius: 15px;
-                border:2px solid red;
+                border:2px solid #ABD904;
                 -webkit-transform: scale(1);
                 transform: scale(1.2)
            }
             }
              a{
-                 color: black;
+                 color: #0F0740;
                  text-decoration: none;
                    
             }
@@ -56,7 +56,7 @@
 }
 
 .loguin{
-    background-color: black;
+    background-color: #0F0740;
     
     a{
         color: white;
