@@ -119,4 +119,3 @@ const CategoriesSection = () => (
 );
 
 export default CategoriesSection;
-
