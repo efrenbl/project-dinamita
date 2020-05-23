@@ -21,5 +21,3 @@ webpack-stats*
 staticfiles
 static_cdn
 media_cdn
-
-.DS_Store
