@@ -28,10 +28,13 @@ def _news_scraper(news_site_uid):
         article = _fetch_article(news_site_uid, host, link)
 
         if article:
-            logger.info('Article fetched!!')
+            logger.info('Estoy vivo!!!')
             articles.append(article)
-            break
+            print(article.title)
+          # break
+    print(len(article))
 
+"""
     _save_articles(news_site_uid, articles)
 
 
@@ -48,7 +51,7 @@ def _save_articles(news_site_uid, articles):
 
         for article in articles:
             row = [str(getattr(article, prop)) for prop in csv_headers]
-            writer.writerow(row)
+            writer.writerow(row) """
 
 
 def _fetch_article(news_site_uid, host, link):
