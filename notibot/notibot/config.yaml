@@ -6,14 +6,14 @@ news_sites:
             article_body: '.field-name-body'
             article_title: '.pane-content h1'
     prensalibre: 
-        url: https://www.prensalibre.com
+        url: 
         queries:
-            homepage_article_links: '.story-title a'
+            homepage_article_links: ''
             article_body: ''
             article_title: ''
     pagina12:
         url: https://www.pagina12.com.ar
         queries:
             homepage_article_links: '.article-title a'
-            article_body: ''
-            article_title: ''
+            article_body: 'article-info'
+            article_title: 'article-titles h1'
