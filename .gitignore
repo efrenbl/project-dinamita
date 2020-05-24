@@ -4,6 +4,7 @@ venv
 # Python files
 *.pyc
 __pycache__
+**/*.pyc
 
 # Python Notebook dot files
 .ipynb*
@@ -23,3 +24,5 @@ static_cdn
 media_cdn
 
 .DS_Store
+
+.vscode
