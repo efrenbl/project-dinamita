@@ -15,5 +15,5 @@ news_sites:
         url: https://www.pagina12.com.ar
         queries:
             homepage_article_links: '.article-title a'
-            article_body: 'article-info'
-            article_title: 'article-titles h1'
+            article_body: 'p'
+            article_title: 'article-titles'
