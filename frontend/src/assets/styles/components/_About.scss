@@ -5,9 +5,12 @@
     &-master{
         display: flex;
         width: 100%;
+        height: auto;
         justify-content: space-around;
-        align-items: center;
-
+        
+        img{
+            width: 30%;
+        }
         p{
            width: 50%;
         }
