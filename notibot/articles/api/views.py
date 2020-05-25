@@ -5,8 +5,14 @@ from django.db.models import Q
 from articles.models import Article
 from .serializers import ArticleSerializer
 
+from rest_framework.pagination import (
+    LimitOffsetPagination,
+    PageNumberPagination,
+)
+
 class ArticleListView(ListAPIView):
     serializer_class = ArticleSerializer
+    pagination_class = LimitOffsetPagination #PageNumberPagination
 
     def get_queryset(self, *args, **kwargs):
         queryset_list = Article.objects.all()
