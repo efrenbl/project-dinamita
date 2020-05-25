@@ -4,6 +4,9 @@ import arrow from '../assets/static/arrow.svg';
 import triangulos2 from '../assets/static/triangulos2.svg';
 import platzimaster from '../assets/static/platzi-master.jpg';
 import silvia from '../assets/static/silvia.jpg';
+import efren from '../assets/static/efren.jpg';
+import claudia from '../assets/static/claudia.jpg';
+import berenice from '../assets/static/berenice.jpg';
 import github from '../assets/static/github.svg';
 import linkedin from '../assets/static/linkedin.svg';
 
@@ -27,8 +30,36 @@ const About = () => (
 
     </div>
     <div className='team'>
-      <div>
+      {/* silvia */}
+      <div className='team__item'>
         <img src={silvia} alt='arrow' />
+        <h3>Silvia Orduña</h3>
+        <p>DevOps</p>
+        <p>algo muy bonito sobre, soy muy cool y me gustna las cervezas</p>
+        <img src={github} alt='arrow' />
+        <img src={linkedin} alt='arrow' />
+      </div>
+      {/* Efren */}
+      <div>
+        <img src={efren} alt='arrow' />
+        <h3>Silvia Orduña</h3>
+        <p>DevOps</p>
+        <p>algo muy bonito sobre, soy muy cool y me gustna las cervezas</p>
+        <img src={github} alt='arrow' />
+        <img src={linkedin} alt='arrow' />
+      </div>
+      {/* Claudia */}
+      <div>
+        <img src={claudia} alt='arrow' />
+        <h3>Silvia Orduña</h3>
+        <p>DevOps</p>
+        <p>algo muy bonito sobre, soy muy cool y me gustna las cervezas</p>
+        <img src={github} alt='arrow' />
+        <img src={linkedin} alt='arrow' />
+      </div>
+      {/* Berenice */}
+      <div>
+        <img src={berenice} alt='arrow' />
         <h3>Silvia Orduña</h3>
         <p>DevOps</p>
         <p>algo muy bonito sobre, soy muy cool y me gustna las cervezas</p>
