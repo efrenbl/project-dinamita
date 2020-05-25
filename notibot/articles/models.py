@@ -15,7 +15,7 @@ class Article(models.Model):
         return self.title
 
 
-class CommentModel(models.Model):
+class Comment(models.Model):
     author = models.ForeignKey('auth.User', on_delete=models.CASCADE)
     target_post = models.ForeignKey(Article, on_delete=models.SET_NULL, null=True)
     comment = models.TextField(blank=True, null=True)
