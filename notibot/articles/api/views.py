@@ -1,9 +1,13 @@
-from rest_framework.generics import ListAPIView, RetrieveAPIView
+from rest_framework.generics import (
+    ListAPIView, 
+    RetrieveAPIView,
+    RetrieveUpdateAPIView,
+    )
 
 from django.db.models import Q
 
-from articles.models import Article
-from .serializers import ArticleSerializer
+from articles.models import Article, Comment
+from .serializers import ArticleSerializer, ArticleDetailSerializer
 
 from rest_framework.pagination import (
     LimitOffsetPagination,
@@ -24,5 +28,12 @@ class ArticleListView(ListAPIView):
         return queryset_list
 
 class ArticleDetailView(RetrieveAPIView):
+    serializer_class = ArticleDetailSerializer
+    def get_queryset(self):
+        article = Article.objects.all()
+        return article
+
+class ArticleUpdateView(RetrieveUpdateAPIView):
     queryset = Article.objects.all()
     serializer_class = ArticleSerializer
+
