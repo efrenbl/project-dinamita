@@ -19,7 +19,7 @@ const Form = () => (
         </div>
       </form>
       <div className='login__container--register'>
-        <a href=''> Si no tienes una cuenta regístrate aquí</a >
+        <a href=''> Si no tienes una cuenta regístrate aquí</a>
       </div>
     </section>
   </section>
