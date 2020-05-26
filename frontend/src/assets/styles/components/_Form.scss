@@ -6,16 +6,17 @@
   }
   
   .login__container {
-    border: 2px solid black;
     border-radius: 10px;
-    box-shadow: 0px 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    background-color: #fff;
+    box-shadow:  1px 2px 0 rgba(0,0,0,.12);
     color: black;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    min-height: 600px;
-    padding: 60px 60px 40px;
-    width: 35%;
+    min-height: 500px;
+    padding: 30px 60px 70px;
+    width: 25%;
+    margin-top: 20px;
   }
 
   .login__container h2 {
@@ -68,7 +69,7 @@
   
   .login__container--form > .input {
     background-color: transparent;
-    border: 2px solid black;
+    border: 1px solid black;
     border-radius: 25px;
     color: black;
     font-family: 'Muli', sans-serif;

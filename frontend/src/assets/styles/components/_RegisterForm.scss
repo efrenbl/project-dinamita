@@ -6,16 +6,17 @@
   }
   
   .register__container {
-    border: 2px solid black;
+    background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0px 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    box-shadow:  1px 2px 0 rgba(0,0,0,.12);
     color: black;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     min-height: 600px;
-    padding: 60px 60px 40px;
-    width: 35%;
+    padding: 20px 60px 40px;
+    width: 25%;
+    margin: 20px 0 20px;
   }
 
   .register__container h2 {
@@ -45,7 +46,7 @@
   
   .register__container--form > .input {
     background-color: transparent;
-    border: 2px solid black;
+    border: 1px solid black;
     border-radius: 25px;
     color: black;
     font-family: 'Muli', sans-serif;
