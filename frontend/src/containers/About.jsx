@@ -30,43 +30,49 @@ const About = () => (
 
     </div>
     <div className='team'>
-      {/* silvia */}
-      <div className='team__item'>
-        <img src={silvia} alt='arrow' />
-        <h3>Silvia Orduña</h3>
-        <p>DevOps</p>
-        <p>algo muy bonito sobre, soy muy cool y me gustna las cervezas</p>
-        <img src={github} alt='arrow' />
-        <img src={linkedin} alt='arrow' />
-      </div>
-      {/* Efren */}
-      <div>
-        <img src={efren} alt='arrow' />
-        <h3>Silvia Orduña</h3>
-        <p>DevOps</p>
-        <p>algo muy bonito sobre, soy muy cool y me gustna las cervezas</p>
-        <img src={github} alt='arrow' />
-        <img src={linkedin} alt='arrow' />
-      </div>
-      {/* Claudia */}
-      <div>
-        <img src={claudia} alt='arrow' />
-        <h3>Silvia Orduña</h3>
-        <p>DevOps</p>
-        <p>algo muy bonito sobre, soy muy cool y me gustna las cervezas</p>
-        <img src={github} alt='arrow' />
-        <img src={linkedin} alt='arrow' />
-      </div>
-      {/* Berenice */}
-      <div>
-        <img src={berenice} alt='arrow' />
-        <h3>Silvia Orduña</h3>
-        <p>DevOps</p>
-        <p>algo muy bonito sobre, soy muy cool y me gustna las cervezas</p>
-        <img src={github} alt='arrow' />
-        <img src={linkedin} alt='arrow' />
-      </div>
+      <h1>Nosotros</h1>
+      <div className='team__items'>
 
+        {/* silvia */}
+        <div className='team__items--item'>
+          <img className='team__items--item-photo' src={silvia} alt='arrow' />
+          <h3>Silvia Orduña</h3>
+          <p>DevOps</p>
+          <p>Algo bonito sobre mi</p>
+          <div>
+            <a href='#'><img src={github} alt='arrow' /></a>
+            <a href='#'><img src={linkedin} alt='arrow' /></a>
+          </div>
+
+        </div>
+        {/* Efren */}
+        <div className='team__items--item'>
+          <img className='team__items--item-photo' src={efren} alt='arrow' />
+          <h3>Efrén Bautista</h3>
+          <p>Backend</p>
+          <p>Algo bonito sobre mi</p>
+          <a href='#'><img src={github} alt='arrow' /></a>
+          <a href='#'><img src={linkedin} alt='arrow' /></a>
+        </div>
+        {/* Claudia */}
+        <div className='team__items--item'>
+          <img className='team__items--item-photo' src={claudia} alt='arrow' />
+          <h3>Claudia Salgado</h3>
+          <p>Frontend</p>
+          <p>Algo bonito sobre mi</p>
+          <a href='#'><img src={github} alt='arrow' /></a>
+          <a href='#'><img src={linkedin} alt='arrow' /></a>
+        </div>
+        {/* Berenice */}
+        <div className='team__items--item'>
+          <img src={berenice} alt='arrow' className='team__items--item-photo' />
+          <h3>Berenice Soto</h3>
+          <p>Data Science</p>
+          <p>Algo bonito sobre mi</p>
+          <a href='#'><img src={github} alt='arrow' /></a>
+          <a href='#'><img src={linkedin} alt='arrow' /></a>
+        </div>
+      </div>
     </div>
   </section>
 
