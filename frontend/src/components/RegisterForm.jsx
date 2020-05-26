@@ -7,7 +7,7 @@ const RegisterForm = () => (
       <form className='register__container--form'>
         <input className='input' type='text' placeholder='Correo' />
         <input className='input' type='password' placeholder='Contraseña' />
-        <input className='input' type='password' placeholder='Confirma la contraseña' />
+        <input className='input' type='password' placeholder='Confirmar contraseña' />
         <button className='button' type='button'> Registrarse </button>
       </form>
       <div className='register__container--login'>

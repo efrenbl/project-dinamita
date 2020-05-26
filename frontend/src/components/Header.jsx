@@ -7,13 +7,6 @@ const Header = () => (
       <p>logo</p>
     </div>
 
-    <div>
-      <input
-        type='text'
-        className='header__search'
-        placeholder=' Buscar...'
-      />
-    </div>
     <div className='header__menu'>
       <ul className='header__menu-items'>
         <li className='header__menu-items--item'>
