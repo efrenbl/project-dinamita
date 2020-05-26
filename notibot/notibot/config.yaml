@@ -5,15 +5,17 @@ news_sites:
             homepage_article_links: '.field-content a'
             article_body: '.field-name-body'
             article_title: '.pane-content h1'
-    prensalibre: 
-        url: 
+    elespectador: 
+        url: https://www.elespectador.com
         queries:
-            homepage_article_links: ''
-            article_body: ''
-            article_title: ''
-    pagina12:
-        url: https://www.pagina12.com.ar
+            homepage_article_links: '.node-title a'
+            article_body: '.node-body'
+            article_title: '.node-title'
+    diariodecuba:
+        url: https://diariodecuba.com
         queries:
-            homepage_article_links: '.article-title a'
-            article_body: 'p'
-            article_title: 'article-titles'
+            homepage_article_links: '.views-title-section a'
+            article_body: '.content'
+            article_title: '.article-title'
+
+           

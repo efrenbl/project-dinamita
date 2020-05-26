@@ -30,11 +30,11 @@ def _news_scraper(news_site_uid):
         if article:
             logger.info('Estoy vivo!!!')
             articles.append(article)
-            print(article.title)
-          # break
-    print(len(article))
+            #print(article.title) #quitamos print para correr el codigo
+            #break
+    #print(len(article))#quitamos print para correr el codigo
 
-"""
+#codigo para crear el archivo
     _save_articles(news_site_uid, articles)
 
 
@@ -47,11 +47,12 @@ def _save_articles(news_site_uid, articles):
     
     with open(out_file_name, mode='w+') as f:
         writer = csv.writer(f)
+        writer = csv.writer(f, delimiter='|')
         writer.writerow(csv_headers)
 
         for article in articles:
             row = [str(getattr(article, prop)) for prop in csv_headers]
-            writer.writerow(row) """
+            writer.writerow(row) 
 
 
 def _fetch_article(news_site_uid, host, link):
