@@ -19,6 +19,6 @@ news_sites:
             homepage_article_links: '.views-title-section a'
             article_body: '.content'
             article_title: '.article-title'
-            article_category:
+            article_category: '.article-antetitle'
 
            
