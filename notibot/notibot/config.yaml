@@ -12,13 +12,13 @@ news_sites:
             homepage_article_links: '.node-title a'
             article_body: '.node-body'
             article_title: '.node-title'
-            article_category:
+            article_category: '.group-node-info .node-term a'
     diariodecuba:
         url: https://diariodecuba.com
         queries:
             homepage_article_links: '.views-title-section a'
             article_body: '.content'
             article_title: '.article-title'
-            article_category:
+            article_category: '.article-antetitle'
 
            
