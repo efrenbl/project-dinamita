@@ -5,6 +5,7 @@ import Home from '../containers/Home';
 import Login from '../containers/Login';
 import Register from '../containers/Register';
 import About from '../containers/About';
+import Internacional from '../containers/Internacional';
 import NotFound from '../containers/NotFound';
 import Category from '../containers/Category';
 
@@ -17,6 +18,7 @@ const App = () => (
       <Route exact path='/register' component={Register} />
       <Route exact path='/category' component={Category} />
       <Route exact path='/about' component={About} />
+      <Route exact path='/internacional' component={Internacional} />
       <Route component={NotFound} />
     </Switch>
   </BrowserRouter>
