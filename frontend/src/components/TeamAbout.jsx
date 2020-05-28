@@ -20,8 +20,8 @@ const TeamAbout = () => (
           <p>DevOps</p>
           <p>Algo bonito sobre mi</p>
           <div className='team__items--icons'>
-            <a href='#'><img src={github} alt='arrow' /></a>
-            <a href='#'><img src={linkedin} alt='arrow' /></a>
+            <a href='https://github.com/SilviaAlarcon' target='_blank'><img src={github} alt='arrow' /></a>
+            <a href='#' target='_blank'><img src={linkedin} alt='arrow' /></a>
           </div>
 
         </div>
@@ -32,8 +32,8 @@ const TeamAbout = () => (
           <p>Backend</p>
           <p>Algo bonito sobre mi</p>
           <div className='team__items--icons'>
-            <a href='#'><img src={github} alt='arrow' /></a>
-            <a href='#'><img src={linkedin} alt='arrow' /></a>
+            <a href='https://github.com/efrenbl' target='_blank'><img src={github} alt='arrow' /></a>
+            <a href='https://www.linkedin.com/in/efrenbl/' target='_blank'><img src={linkedin} alt='arrow' /></a>
 
           </div>
 
@@ -45,8 +45,8 @@ const TeamAbout = () => (
           <p>Frontend</p>
           <p>Algo bonito sobre mi</p>
           <div className='team__items--icons'>
-            <a href='#'><img src={github} alt='arrow' /></a>
-            <a href='#'><img src={linkedin} alt='arrow' /></a>
+            <a href='https://github.com/claudiagonal' target='_blank'><img src={github} alt='arrow' /></a>
+            <a href='https://www.linkedin.com/in/clausalgado/' target='_blank'><img src={linkedin} alt='arrow' /></a>
 
           </div>
 
@@ -58,8 +58,8 @@ const TeamAbout = () => (
           <p>Data Science</p>
           <p>Algo bonito sobre mi</p>
           <div className='team__items--icons'>
-            <a href='#'><img src={github} alt='arrow' /></a>
-            <a href='#'><img src={linkedin} alt='arrow' /></a>
+            <a href='https://github.com/BereSoto' target='_blank'><img src={github} alt='arrow' /></a>
+            <a href='https://www.linkedin.com/in/montserrat-berenice-soto-ferm%C3%ADn-07aa13109/' target='_blank'><img src={linkedin} alt='arrow' /></a>
 
           </div>
 
