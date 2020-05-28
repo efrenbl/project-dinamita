@@ -6,4 +6,24 @@ from articles.models import Article
 class ArticleSerializer(ModelSerializer):
     class Meta:
         model = Article
-        fields = ('id','title','content','category','url','source','publication_date')
+        fields = ('id',
+            'title',
+            'content',
+            'category',
+            'url',
+            'source',
+            'publication_date')
+
+class ArticleDetailSerializer(ModelSerializer):
+  #  comments = SerializerMethodField()
+    class Meta:
+        model = Article
+        fields = ['id',
+            'title',
+            'content',
+            'category',
+            'url',
+            'source',
+            'publication_date',
+            #'comments',
+            ]
