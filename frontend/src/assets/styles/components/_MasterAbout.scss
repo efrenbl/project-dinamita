@@ -1,0 +1,26 @@
+
+.container__about{
+    &-master{
+        display: flex;
+        width: 100%;
+        height: auto;
+        justify-content: space-around;
+        margin: 100px;
+     
+        img{
+            width: 30%;
+        }
+        p{
+           width: 50%;
+        }
+       
+    }
+}
+
+.category__container {
+    margin-top: 25px;
+  
+  }
+  .category__name {
+    
+    }
