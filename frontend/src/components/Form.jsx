@@ -17,10 +17,10 @@ const Form = () => (
             Recuérdame
           </label>
         </div>
+        <div className='login__container--register'>
+          <a href=''> Si no tienes una cuenta regístrate aquí</a>
+        </div>
       </form>
-      <div className='login__container--register'>
-        <a href=''> Si no tienes una cuenta regístrate aquí</a >
-      </div>
     </section>
   </section>
 );

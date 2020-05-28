@@ -1,9 +1,13 @@
 import React from 'react';
+import SelectCategories from '../components/SelectCategories';
 import Categories from '../components/Categories';
 import CarouselItem from '../components/CarouselItem';
 
-const Home = () => (
-  <div className='Home'>
+const Internacional = () => (
+  <div className=''>
+    <div className=''>
+      <SelectCategories />
+    </div>
     <Categories>
 
       <CarouselItem />
@@ -12,7 +16,9 @@ const Home = () => (
       <CarouselItem />
 
     </Categories>
+
   </div>
+
 );
 
-export default Home;
+export default Internacional;

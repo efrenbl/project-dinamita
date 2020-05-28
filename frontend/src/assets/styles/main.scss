@@ -1,20 +1,24 @@
 
 @import "./components/Header";
 @import "./components/Footer";
-@import "./components/CategoriesSection";
 @import "./components/TitleSection";
 @import "./components/NoticeOfPrivacy";
-@import "./components/About";
+@import "./components/MasterAbout";
+@import "./components/TeamAbout";
 @import "./components/Boton";
-// @import "./components/Boton2";
-@import "./components/Cards";
 @import "./components/Form";
+@import "./components//RegisterForm";
+@import "./components//Categories";
+@import "./components/CarouselItem";
+@import "./components/NotFound";
+@import "./components/CategoryView";
+@import "./components/SelectCategories";
 
 
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
     width: 100%;
-   
+    background-color: #EAEDED;
 }
 

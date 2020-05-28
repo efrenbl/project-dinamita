@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Header = () => (
 
@@ -7,22 +8,19 @@ const Header = () => (
       <p>logo</p>
     </div>
 
-    <div>
-      <input
-        type='text'
-        className='header__search'
-        placeholder=' Buscar...'
-      />
-    </div>
     <div className='header__menu'>
       <ul className='header__menu-items'>
         <li className='header__menu-items--item'>
-          <a href='#'>Acerca de </a>
-          {' '}
+          Categorías
+
         </li>
-        <li className='header__menu-items--item loguin'>
-          {' '}
-          <a href='#'>Iniciar sesión </a>
+        <li className='header__menu-items--item'>
+          <Link to='/about'>Acerca de</Link>
+
+        </li>
+        <li className='header__menu-items--item login'>
+
+          <Link to='/login'>Iniciar sesión</Link>
         </li>
       </ul>
     </div>

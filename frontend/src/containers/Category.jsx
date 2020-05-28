@@ -1,18 +1,18 @@
 import React from 'react';
-import Categories from '../components/Categories';
+import CategoryView from '../components/CategoryView';
 import CarouselItem from '../components/CarouselItem';
 
-const Home = () => (
-  <div className='Home'>
-    <Categories>
+const Category = () => (
+  <div className='Category'>
+    <CategoryView>
 
       <CarouselItem />
       <CarouselItem />
       <CarouselItem />
       <CarouselItem />
 
-    </Categories>
+    </CategoryView>
   </div>
 );
 
-export default Home;
+export default Category;
