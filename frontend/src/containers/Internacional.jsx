@@ -1,16 +1,23 @@
 import React from 'react';
-import CategoryView from '../components/CategoryView';
+import SelectCategories from '../components/SelectCategories';
+import Categories from '../components/Categories';
 import CarouselItem from '../components/CarouselItem';
 
 const Internacional = () => (
-  <CategoryView>
+  <div className=''>
+    <div className=''>
+      <SelectCategories />
+    </div>
+    <Categories>
 
-    <CarouselItem />
-    <CarouselItem />
-    <CarouselItem />
-    <CarouselItem />
+      <CarouselItem />
+      <CarouselItem />
+      <CarouselItem />
+      <CarouselItem />
 
-  </CategoryView>
+    </Categories>
+
+  </div>
 
 );
 
