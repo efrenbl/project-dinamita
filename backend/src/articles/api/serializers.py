@@ -34,4 +34,7 @@ class ArticleDetailSerializer(ModelSerializer):
             ]
 
 
-    
+class CommentCreateSerializer(ModelSerializer):
+     class Meta:
+        model = Comment
+        fields = ("author",'target_article','content')
