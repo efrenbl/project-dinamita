@@ -1,0 +1,24 @@
+# virtual environments
+venv
+
+# Python files
+*.pyc
+__pycache__
+**/*.pyc
+
+# Python Notebook dot files
+.ipynb*
+
+# Secret environment settings
+.env
+env
+
+# Node and Webpack files
+node_modules
+npm-debug.log
+webpack-stats*
+
+# Static assests
+staticfiles
+static_cdn
+media_cdn
