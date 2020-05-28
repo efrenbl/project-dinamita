@@ -14,8 +14,13 @@ class ArticleSerializer(ModelSerializer):
             'source',
             'publication_date')
 
+class CommentSerializer(ModelSerializer):
+    class Meta:
+        model = Comment
+        fields = ("author",'content','publication_date')
+
 class ArticleDetailSerializer(ModelSerializer):
-  #  comments = SerializerMethodField()
+    comments = CommentSerializer(many=True, read_only=True, source='comment_set')
     class Meta:
         model = Article
         fields = ['id',
@@ -25,5 +30,8 @@ class ArticleDetailSerializer(ModelSerializer):
             'url',
             'source',
             'publication_date',
-            #'comments',
+            'comments'
             ]
+
+
+    
