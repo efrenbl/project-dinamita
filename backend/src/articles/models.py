@@ -25,3 +25,12 @@ class Article(models.Model):
 
     def __str__(self):
         return self.title
+
+class Comment(models.Model):
+    author = models.ForeignKey('auth.User', on_delete=models.CASCADE)
+    target_article = models.ForeignKey(Article, on_delete=models.SET_NULL, null=True)
+    content = models.CharField(max_length=400)
+    publication_date = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return self.content

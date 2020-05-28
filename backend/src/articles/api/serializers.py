@@ -1,7 +1,7 @@
 from rest_framework.serializers import SerializerMethodField
 from rest_framework.serializers import ModelSerializer
 
-from articles.models import Article
+from articles.models import Article, Comment
 
 class ArticleSerializer(ModelSerializer):
     class Meta:

@@ -8,7 +8,7 @@ from rest_framework.generics import ListAPIView, RetrieveAPIView
 
 from django.db.models import Q
 
-from articles.models import Article #Comment
+from articles.models import Article, Comment
 from .serializers import ArticleSerializer, ArticleDetailSerializer
 
 from rest_framework.pagination import (
