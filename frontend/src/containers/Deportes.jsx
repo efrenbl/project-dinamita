@@ -1,18 +1,19 @@
 import React from 'react';
-import CategoryView from '../components/CategoryView';
 import CarouselItem from '../components/CarouselItem';
+import ViewDeportes from '../components/ViewDeportes';
 
-const Category = () => (
+const Deportes = () => (
   <div className='Category'>
-    <CategoryView>
+    <ViewDeportes>
 
       <CarouselItem />
       <CarouselItem />
       <CarouselItem />
       <CarouselItem />
 
-    </CategoryView>
+    </ViewDeportes>
   </div>
+
 );
 
-export default Category;
+export default Deportes;
