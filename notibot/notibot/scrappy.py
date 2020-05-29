@@ -36,7 +36,7 @@ def _news_scraper(news_site_uid):
             logger.info('Estoy vivo!!!')
             articles.append(article)
             #print(article.title) #quitamos print para correr el codigo
-            #break
+            break
     #print(len(article))#quitamos print para correr el codigo
 
 #codigo para crear el archivo
