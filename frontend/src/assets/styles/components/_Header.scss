@@ -55,28 +55,39 @@
     }
 
 }
+.navegacion ul{
+    list-style: none;
+}
 
+.header ul li:hover ul {
+    opacity:1;
+    transform: translateX(0%);
+}
 
 .submenu{
     position: absolute;
-    background-color: #0F0740;
-    width: 120%;
+    background-color:#0F0740;
+    width: 88%;
+    border-radius: 18px;
     visibility: hidden;
     list-style: none;
-    opacity: 0;
-    transition: opacity 1.5s;
+    opacity: 1;
+    transition: opacity 2s;
     text-decoration: none;
+    
 }
 
 .submenu li a{
-    display: inline-block;
+    display: block;
     border-radius: 20px;
-    width: 150%;
+    width: 90%;
     margin: 0;
     padding: 0;
-    color:white;
+    color: white;
     list-style: none;
     font-family: 'Roboto', sans-serif;
+    text-align: center;
+    padding-bottom: 10px;
     font-size: 16px;
     text-decoration: none;
 }
@@ -84,4 +95,5 @@
 .header li:hover .submenu{
     visibility: visible;
     opacity: 1;
+   
 }
