@@ -13,8 +13,8 @@ from common import config
 
 
 logger = logging.getLogger(__name__)
-is_well_formed_link = re.compile(r'^https?://.+/.+$') # https://example.com/hello
-is_root_path = re.compile(r'^/.+$') # /some-text
+is_well_formed_link = re.compile(r'^https?://.+/.+$') 
+is_root_path = re.compile(r'^/.+$') 
 
 
 def _news_scraper(news_site_uid):
@@ -36,7 +36,7 @@ def _news_scraper(news_site_uid):
             logger.info('Estoy vivo!!!')
             articles.append(article)
             #print(article.title) #quitamos print para correr el codigo
-            break
+            #break
     #print(len(article))#quitamos print para correr el codigo
 
 #codigo para crear el archivo
