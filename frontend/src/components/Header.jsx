@@ -11,7 +11,8 @@ const Header = () => (
     <div className='header__menu'>
       <ul className='header__menu-items'>
         <li className='header__menu-items--item'>
-          Categorías
+          Perros
+
 
         </li>
         <li className='header__menu-items--item'>
