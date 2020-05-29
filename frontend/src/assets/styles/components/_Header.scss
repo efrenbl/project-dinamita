@@ -60,25 +60,32 @@
     list-style: none;
 }
 
-.menu > li{
-    position: relative;
-    display: inline-block;
+.header ul li:hover ul {
+    opacity:1;
+    transform: translateX(0%);
 }
 
 .submenu{
     position: absolute;
-    background-color: white;
+    background-color: #0F0740;
     width: 120%;
     visibility: hidden;
+    list-style: none;
     opacity: 0;
     transition: opacity 1.5s;
+    text-decoration: none;
 }
 
 .submenu li a{
     display: inline-block;
-    padding: 15px;
-    color:#0F0740;
+    border-radius: 20px;
+    width: 150%;
+    margin: 0;
+    padding: 0;
+    color:white;
+    list-style: none;
     font-family: 'Roboto', sans-serif;
+    font-size: 16px;
     text-decoration: none;
 }
 
