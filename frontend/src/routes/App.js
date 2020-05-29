@@ -10,6 +10,7 @@ import NotFound from '../containers/NotFound';
 import Internacional from '../containers/Internacional';
 import Deportes from '../containers/Deportes';
 import Espectaculos from '../containers/Espectaculos';
+import ContentNew from '../containers/ContentNew';
 
 const App = () => (
   <BrowserRouter>
@@ -21,8 +22,9 @@ const App = () => (
       <Route exact path='/internacional' component={Internacional} />
       <Route exact path='/about' component={About} />
       <Route exact path='/nacional' component={Nacional} />
-      <Route exact path='/Deportes' component={Deportes} />
-      <Route exact path='/Espectaculos' component={Espectaculos} />
+      <Route exact path='/deportes' component={Deportes} />
+      <Route exact path='/espectaculos' component={Espectaculos} />
+      <Route exact path='/contentNew' component={ContentNew} />
       <Route component={NotFound} />
     </Switch>
   </BrowserRouter>
