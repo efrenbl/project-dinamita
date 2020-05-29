@@ -21,8 +21,8 @@ def main(filename):
 
 def _read_data(filename): #declaramos funcion read_data
     logger.info('reading file {}'.format(filename))
-
-    return pd.read_csv(filename)
+    
+    return pd.read_csv(filename,sep="|")
     
     #pd.read_csv(filename,encoding='cp1252')
     #return pd.read_csv(filename, encoding = "latin-1")
@@ -42,10 +42,11 @@ def _add_newspaper_uid_column(df,newspaper_uid):
     return df
 
 def _extract_host(df):
-    logger.info('Host froms urls')
-    df['host']=df['url'].applay(lambda url: urlparse(url).netloc)
-
+    logger.info(f'Extracting host from urls')
+    df['host'] = df['url'].apply(lambda url: urlparse(url).netloc)
     return df
+
+  
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser() #cual va a ser el dataset que se trabajara
