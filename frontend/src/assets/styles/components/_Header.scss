@@ -56,3 +56,33 @@
 
 }
 
+.navegacion ul{
+    list-style: none;
+}
+
+.menu > li{
+    position: relative;
+    display: inline-block;
+}
+
+.submenu{
+    position: absolute;
+    background-color: white;
+    width: 120%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1.5s;
+}
+
+.submenu li a{
+    display: inline-block;
+    padding: 15px;
+    color:#0F0740;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+
+.header li:hover .submenu{
+    visibility: visible;
+    opacity: 1;
+}

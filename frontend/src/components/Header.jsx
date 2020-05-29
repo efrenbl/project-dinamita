@@ -11,8 +11,14 @@ const Header = () => (
     <div className='header__menu'>
       <ul className='header__menu-items'>
         <li className='header__menu-items--item'>
-          Perros
-
+          Categorías
+          
+          <ul className="submenu">
+      <li><a href="#">Internacional</a></li>
+      <li><a href="#">Nacional</a></li>
+      <li><a href="#">Deportes</a></li>
+      <li><a href="#">Política</a></li>
+        </ul>
 
         </li>
         <li className='header__menu-items--item'>
