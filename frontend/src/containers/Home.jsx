@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import Categories from '../components/Categories';
 import CarouselItem from '../components/CarouselItem';
-import Internacional from './Internacional';
+import CarouselItemMore from '../components/CarouselItemMore';
 
 class Home extends Component {
 
@@ -16,12 +16,12 @@ class Home extends Component {
   render() {
     return (
       <div className='Home'>
-        <Categories title={Internacional}>
+        <Categories>
 
           <CarouselItem />
           <CarouselItem />
           <CarouselItem />
-          <CarouselItem />
+          <CarouselItemMore />
 
         </Categories>
       </div>
