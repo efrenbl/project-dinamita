@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Form = () => (
   <section className='login'>
@@ -18,7 +19,7 @@ const Form = () => (
           </label>
         </div>
         <div className='login__container--register'>
-          <a href=''> Si no tienes una cuenta regístrate aquí</a>
+          <Link to='/register'>Si no tienes una cuenta regístrate aquí</Link>
         </div>
       </form>
     </section>
