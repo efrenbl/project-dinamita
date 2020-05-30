@@ -10,6 +10,7 @@ const Internacional = () => (
       <CarouselItem />
       <CarouselItem />
       <CarouselItem />
+      
 
     </CategoryView>
   </div>
