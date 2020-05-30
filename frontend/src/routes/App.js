@@ -1,6 +1,5 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import Header from '../components/Header';
 import Home from '../containers/Home';
 import Login from '../containers/Login';
 import Register from '../containers/Register';
@@ -10,6 +9,7 @@ import NotFound from '../containers/NotFound';
 import Internacional from '../containers/Internacional';
 import Deportes from '../containers/Deportes';
 import Espectaculos from '../containers/Espectaculos';
+<<<<<<< HEAD
 import ContentNew from '../containers/ContentNew';
 
 const App = () => (
@@ -27,6 +27,7 @@ const App = () => (
       <Route exact path='/contentNew' component={ContentNew} />
       <Route component={NotFound} />
     </Switch>
+
   </BrowserRouter>
 );
 

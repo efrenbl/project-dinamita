@@ -35,7 +35,7 @@ const Categories = ({ children }) => (
     <div className='categories'>
       <section className='carousel'>
         <section className='categories__container'>
-          <h2 className='categories__name'> Tecnología </h2>
+          <h2 className='categories__name'> Deportes </h2>
         </section>
         <div className='carousel__container'>
           <section className='carousel'>

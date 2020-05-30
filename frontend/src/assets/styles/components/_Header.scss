@@ -55,4 +55,50 @@
     }
 
 }
+.navegacion ul{
+    list-style: none;
+}
 
+.header ul li:hover ul {
+    opacity:1;
+    transform: translateX(0%);
+}
+
+.submenu{
+    position: absolute;
+    background-color:#0F0740;
+    width: 88%;
+    border-radius: 18px;
+    visibility: hidden;
+    list-style: none;
+    opacity: .8;
+    transition: opacity 1.5s;
+    text-decoration: none;
+    
+}
+
+.submenu li a{
+    display: block;
+    border-radius: 20px;
+    width: 90%;
+    margin: 0;
+    padding: 0;
+    color: white;
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.header li:hover .submenu{
+    visibility: visible;
+    opacity: 1;
+   
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+}
