@@ -1,18 +1,22 @@
 import React from 'react';
 import CategoryView from '../components/CategoryView';
 import CarouselItem from '../components/CarouselItem';
+import useInitialState from '../hooks/useInitialState';
 
-const Internacional = () => (
-  <div className='Category'>
-    <CategoryView>
+const APIInternacional = 'http://127.0.0.1:8000/api/articles/?q=internacional';
 
-      <CarouselItem />
-      <CarouselItem />
-      <CarouselItem />
-      <CarouselItem />
-
-    </CategoryView>
+const Internacional = () => {
+  const initialStateInternacional = useInitialState(APIInternacional);
+  return (<div className='Category'>
+    {initialStateInternacional.map(item =>
+      <CategoryView key={item.category} {...item} >
+        {initialStateInternacional.map(item =>
+          <CarouselItem key={item.id} {...item} />
+        )}
+      </CategoryView>
+    )}
   </div>
-);
+  );
+};
 
 export default Internacional;

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import Categories from '../components/Categories';
 import CarouselItem from '../components/CarouselItem';
 import CarouselItemMore from '../components/CarouselItemMore';
@@ -53,7 +53,6 @@ const Home = () => {
           <CarouselItemMore />
         </Categories>
       )}
-
 
     </div>
   );
