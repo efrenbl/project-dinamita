@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'rest_auth',
     'rest_framework',
     'rest_framework.authtoken',
+    'django_extensions',
 
     #local
     'articles'
@@ -92,14 +93,15 @@ WSGI_APPLICATION = 'notibot.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'postgres',
         'USER': 'postgres',
-        'PASSWORD': 'postgres',
-        'HOST': 'db',
-        'PORT': 5432,
+        'PASSWORD': 'oligopolio',
+        'HOST': 'localhost', 
+        'PORT': 5433,
     }
 }
+
 
 
 
@@ -146,7 +148,7 @@ REST_FRAMEWORK = {
     # or allow read-only access for unauthenticated users.
     'DEFAULT_PERMISSION_CLASSES': [
         'rest_framework.permissions.IsAuthenticatedOrReadOnly'
-     ]
+     ],
 
     # 'DEFAULT_RENDERER_CLASSES': [
     #     'rest_framework.renderers.JSONRenderer',
@@ -154,7 +156,14 @@ REST_FRAMEWORK = {
     # 'DEFAULT_PARSER_CLASSES': [
     #     'rest_framework.parsers.JSONParser',
     # ]
+
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+    'rest_framework.authentication.TokenAuthentication',
+    # 'rest_framework.authentication.SessionAuthentication',
+    ]
 }
+
+
 
 CORS_ORIGIN_ALLOW_ALL = True
 
