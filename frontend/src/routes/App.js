@@ -18,11 +18,12 @@ const App = () => (
         <Route exact path='/' component={Home} />
         <Route exact path='/login' component={Login} />
         <Route exact path='/register' component={Register} />
-        <Route exact path='/internacional' component={Internacional} />
         <Route exact path='/about' component={About} />
+        <Route exact path='/internacional' component={Internacional} />
         <Route exact path='/nacional' component={Nacional} />
         <Route exact path='/deportes' component={Deportes} />
         <Route exact path='/espectaculos' component={Espectaculos} />
+        <Route exact path='/content/:id' component={Espectaculos} />
         <Route component={NotFound} />
       </Switch>
     </Layout>

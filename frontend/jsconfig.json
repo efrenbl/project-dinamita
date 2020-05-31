@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "baseUrl": "./src",
+    "moduleResolution": "node",
+    "lib": ["dom", "esnext", "webworker"],
+    "target": "es2015",
+    "module": "esnext",
+    "checkJs": true,
+    "resolveJsonModule": true,
+    "jsx": "react",
+    "paths": {
+      "~": ["./src"]
+    }
+  },
+  "types": ["./types"],
+  "exclude": ["dist", "_nuxt"]
+}
