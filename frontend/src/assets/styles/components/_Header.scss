@@ -1,117 +1,113 @@
-.header{
+.header {
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 110px;
+
+  &__menu {
     background-color: white;
-    display: flex;
-    justify-content:space-around;
-    align-items: center;
-    width: 100%;
-    height: 110px;
- 
-    &__menu{
-        background-color:white;
-        width: 60%;
-        margin: 20px;
-        
-        &-items{
-            display: flex;
-            list-style: none;
-            height: 60%;
-            
-            
-            &--item{
-               width: 40%;
-               display: flex;
-               border:2px solid #0F0740;
-               border-radius: 15px;
-               margin-left: 30px;
-               text-align: center;
-               font-weight: bold;
-               font-size: 1.5rem;
-               height: 50px;
-               align-items: center;
-               justify-content: center;
-               
-               &:hover {
-                border:2px solid #ABD904;
-                -webkit-transform: scale(1);
-                transform: scale(1.2)
-           }
-            }
-             a{
-                 color: #0F0740;
-                 text-decoration: none;
-                   
-            }
-           
+    width: 60%;
+    margin: 20px;
+
+    &-items {
+      display: flex;
+      list-style: none;
+      height: 60%;
+
+      &--item {
+        position: relative;
+        width: 40%;
+        display: flex;
+        border: 2px solid #0f0740;
+        border-radius: 15px;
+        margin-left: 30px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 1.5rem;
+        height: 50px;
+        align-items: center;
+        justify-content: center;
+        z-index: 99;
+        transition: transform 300ms ease;
+
+        &:hover {
+          border: 2px solid #abd904;
+          -webkit-transform: scale(1);
+          transform: scale(1.2);
         }
-    }
-}
-
-.login{
-    background-color: #0F0740;
-    
-    a{
-        color: white;
+      }
+      a {
+        color: #0f0740;
         text-decoration: none;
+      }
     }
-
+  }
 }
-.navegacion ul{
-    list-style: none;
+
+.login {
+  background-color: #0f0740;
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+}
+.navegacion ul {
+  list-style: none;
 }
 
 .header ul li:hover ul {
-    opacity:1;
-    transform: translateX(0%);
-    margin-top:20px;
+  opacity: 1;
+  transform: translateX(0%);
 }
 
-.submenu{
-    position: absolute;
-    margin-bottom: 20px;
-    background-color:#0F0740;
-    width: 88%;
-    border-radius: 18px;
-    visibility: hidden;
-    list-style: none;
-    opacity: .8;
-    transition: opacity 1.5s;
-    text-decoration: none;
-    
+.submenu {
+  top: 100%;
+  position: absolute;
+  background-color: #0f0740;
+  width: 88%;
+  border-radius: 18px;
+  visibility: hidden;
+  list-style: none;
+  opacity: 0.8;
+  transition: opacity 1.5s;
+  margin-top: 1rem;
+  text-decoration: none;
+  z-index: 99;
 }
 
-.submenu li a{
-    display: block;
-    border-radius: 20px;
-    width: 90%;
-    margin: 0;
-    padding: 0;
-    color: white;
-    list-style: none;
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-    padding-bottom: 10px;
-    font-size: 16px;
-    text-decoration: none;
+.submenu li a {
+  display: block;
+  border-radius: 20px;
+  width: 90%;
+  margin: 0;
+  padding: 0;
+  color: white;
+  list-style: none;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  padding-bottom: 10px;
+  font-size: 16px;
+  text-decoration: none;
 }
 
-.header li:hover .submenu{
-    visibility: visible;
-    opacity: 1;
-   
+.header li:hover .submenu {
+  visibility: visible;
+  opacity: 1;
 }
 
 .submenu li a:hover {
-    color: #ABD904;
-    transition: all .4s;
+  color: #abd904;
+  transition: all 0.4s;
 }
 
-.submenu{
-    position: absolute;
+.submenu {
+  position: absolute;
 }
-
 
 .logo {
-    width: 100px;
-    height: 100px;
+  width: 100px;
+  height: 100px;
 }
-
