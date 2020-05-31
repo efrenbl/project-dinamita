@@ -1,32 +1,61 @@
-import React, { Component } from 'react';
-import axios from 'axios';
+import React from 'react';
 import Categories from '../components/Categories';
 import CarouselItem from '../components/CarouselItem';
 import CarouselItemMore from '../components/CarouselItemMore';
+import useInitialState from '../hooks/useInitialState';
 
-class Home extends Component {
+const APIInternacional = 'http://127.0.0.1:8000/api/articles/?q=internacional';
+const APINacional = 'http://127.0.0.1:8000/api/articles/?q=nacional';
+const APIFinanzas = 'http://127.0.0.1:8000/api/articles/?q=finanzas';
+const APIDeportes = 'http://127.0.0.1:8000/api/articles/?q=deportes';
 
-  componentDidMount() {
-    axios.get('http://127.0.0.1:8000/api/articles/2')
-      .then(result => {
-        console.log(result.data)
-      }).catch(console.log);
-  }
+const Home = () => {
+  const initialStateInternacional = useInitialState(APIInternacional);
+  const initialStateNacional = useInitialState(APINacional);
+  const initialStateFinanzas = useInitialState(APIFinanzas);
+  const initialStateDeportes = useInitialState(APIDeportes);
 
-  render() {
-    return (
-      <div className='Home'>
-        <Categories>
+  return (
+    <div className='Home'>
 
-          <CarouselItem />
-          <CarouselItem />
-          <CarouselItem />
+      {initialStateInternacional.map(item =>
+        <Categories key={item.category} {...item} >
+          {initialStateInternacional.map(item =>
+            <CarouselItem key={item.id} {...item} />
+          )}
           <CarouselItemMore />
-
         </Categories>
-      </div>
-    );
-  }
+      )}
+
+      {initialStateNacional.map(item =>
+        <Categories key={item.category} {...item} >
+          {initialStateNacional.map(item =>
+            <CarouselItem key={item.id} {...item} />
+          )}
+          <CarouselItemMore />
+        </Categories>
+      )}
+
+      {initialStateFinanzas.map(item =>
+        <Categories key={item.category} {...item} >
+          {initialStateFinanzas.map(item =>
+            <CarouselItem key={item.id} {...item} />
+          )}
+          <CarouselItemMore />
+        </Categories>
+      )}
+
+      {initialStateDeportes.map(item =>
+        <Categories key={item.category} {...item} >
+          {initialStateDeportes.map(item =>
+            <CarouselItem key={item.id} {...item} />
+          )}
+          <CarouselItemMore />
+        </Categories>
+      )}
+
+    </div>
+  );
 };
 
 export default Home;

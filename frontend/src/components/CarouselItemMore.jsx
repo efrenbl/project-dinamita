@@ -3,7 +3,7 @@ import more from '../assets/static/more.svg';
 
 const CarouselItemMore = () => (
   <div className='carousel-item'>
-    <img className='carousel-item__img' src={more} alt='' />
+    <img className='carousel-more' src={more} alt='' />
   </div>
 );
 
