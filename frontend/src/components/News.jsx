@@ -1,38 +1,23 @@
 import React from 'react';
 
-const News = () => (
-  <div className='news'>
-
-    <div className='news__title'>
-      <h1>
-        Titulo
-      </h1>
-    </div>
+const News = ({ title, content, source }) => (
+  // TODO: Get comments on this component
+  <article className='news'>
+    <header className='news__title'>
+      <h1>{title}</h1>
+    </header>
 
     <div className='news__content'>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Esse fugit porro maiores dicta, sunt, ea totam labore maxime debitis sed alias quas vitae soluta minima quis facere reprehenderit exercitationem numquam?
-      </p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse fugit porro maiores dicta, sunt, ea totam labore maxime debitis sed alias quas vitae soluta minima quis facere reprehenderit exercitationem numquam?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse fugit porro maiores dicta, sunt, ea totam labore maxime debitis sed alias quas vitae soluta minima quis facere reprehenderit exercitationem numquam?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse fugit porro maiores dicta, sunt, ea totam labore maxime debitis sed alias quas vitae soluta minima quis facere reprehenderit exercitationem numquam?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse fugit porro maiores dicta, sunt, ea totam labore maxime debitis sed alias quas vitae soluta minima quis facere reprehenderit exercitationem numquam?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse fugit porro maiores dicta, sunt, ea totam labore maxime debitis sed alias quas vitae </p>
+      <div dangerouslySetInnerHTML={content} />
       <div>
-        <p>Fuente</p>
+        <p>{`Fuente ${source}`}</p>
       </div>
-
     </div>
-    <div className='news__comments'>
+    <aside className='news__comments'>
       <h3>Comentarios</h3>
-
-      <textarea className='news__comments--item'>
-        Deja tu comentario
-      </textarea>
-    </div>
-  </div>
-
+      <textarea className='news__comments--item'>Deja tu comentario</textarea>
+    </aside>
+  </article>
 );
 
 export default News;

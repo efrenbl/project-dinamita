@@ -1,6 +1,8 @@
 const path = require('path');
+const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+require('dotenv').config();
 
 module.exports = {
   entry: './src/index.js',
@@ -51,6 +53,10 @@ module.exports = {
     historyApiFallback: true,
   },
   plugins: [
+    new webpack.EnvironmentPlugin({
+      NODE_ENV: 'development', // use 'development' unless process.env.NODE_ENV is defined
+      API_ENDPOINT: 'http://127.0.0.1:8000/api',
+    }),
     new HtmlWebpackPlugin({
       template: './public/index.html',
       filename: './index.html',
