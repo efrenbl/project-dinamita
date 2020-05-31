@@ -36,7 +36,6 @@ const ViewDeportes = ({ children }) => (
         </div>
       </section>
     </div>
-
   </section>
 );
 
