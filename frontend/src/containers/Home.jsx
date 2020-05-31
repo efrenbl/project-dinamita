@@ -4,10 +4,11 @@ import CarouselItem from '../components/CarouselItem';
 import CarouselItemMore from '../components/CarouselItemMore';
 import useInitialState from '../hooks/useInitialState';
 
-const APIInternacional = 'http://127.0.0.1:8000/api/articles/?q=internacional';
-const APINacional = 'http://127.0.0.1:8000/api/articles/?q=nacional';
-const APIFinanzas = 'http://127.0.0.1:8000/api/articles/?q=finanzas';
-const APIDeportes = 'http://127.0.0.1:8000/api/articles/?q=deportes';
+const { API_ENDPOINT } = process.env;
+const APIInternacional = `${API_ENDPOINT}/api/articles/?q=internacional`;
+const APINacional = `${API_ENDPOINT}/api/articles/?q=nacional`;
+const APIFinanzas = `${API_ENDPOINT}/api/articles/?q=finanzas`;
+const APIDeportes = `${API_ENDPOINT}/api/articles/?q=deportes`;
 
 const Home = () => {
   const initialStateInternacional = useInitialState(APIInternacional);
