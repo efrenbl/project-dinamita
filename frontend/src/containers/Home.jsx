@@ -8,7 +8,7 @@ import useFetchState from '../hooks/useFetchState';
 const Home = () => {
   /** @type {{[category: string]: import('../../types').Article[]}} */
   const initialState = {};
-  const { state, result } = useFetchState(client.getArticlesByCategory, initialState);
+  const { state, result } = useFetchState(() => client.getArticlesByCategory(), initialState);
   switch (state) {
     case 'idle':
       return <div className='Home'>Pendiente de solicitar</div>;

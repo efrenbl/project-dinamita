@@ -5,7 +5,7 @@ import useFetchState from '../hooks/useFetchState';
 import { client } from '../client';
 
 const Internacional = () => {
-  const { result: initialStateInternacional } = useFetchState(client.getArticles('internacional'));
+  const { result: initialStateInternacional } = useFetchState(() => client.getArticles('internacional'));
   return (
     <div className='Category'>
       {initialStateInternacional.map((item) => (

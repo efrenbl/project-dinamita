@@ -21,7 +21,7 @@ const useFetchState = (request, initialStateData) => {
         setData({ state: 'error', result: null });
       });
     setData({ state: 'loading', result: null });
-  });
+  }, []);
 
   return data;
 };

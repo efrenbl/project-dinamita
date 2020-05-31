@@ -4,10 +4,8 @@ import ViewNacional from '../components/ViewNacional';
 import useFetchState from '../hooks/useFetchState';
 import { client } from '../client';
 
-const APINacional = 'http://127.0.0.1:8000/api/articles/?q=nacional';
-
 const Nacional = () => {
-  const { result: initialStateNacional } = useFetchState(client.getArticles('nacional'));
+  const { result: initialStateNacional } = useFetchState(() => client.getArticles('nacional'));
   return (
     <div className='Category'>
       {initialStateNacional.map((item) => (

@@ -11,7 +11,7 @@ class Client {
       throw new Error('Missing apiUrl parameter for client');
     }
     /** @type {string} */
-    this.apiUrl = new URL(apiUrl);
+    this.apiUrl = apiUrl;
   }
 
   /**
@@ -19,8 +19,8 @@ class Client {
    * @param {string} path La ruta a solicitar
    */
   get(path) {
-    const url = new URL(path, this.apiUrl).toString();
-    return fetch(this.apiUrl + url)
+    const url = new URL(`/api${path}`, this.apiUrl).toString();
+    return fetch(url)
       .then((response) => response.json())
       .catch((error) => {
         console.error(
@@ -48,20 +48,21 @@ class Client {
    * Obtiene listado de articulos ordenados por categorías en un array bidimencional
    * @returns {Promise<{[category: string]: Article[]}>} Los articulos organizados por categoría
    */
-  async getArticlesByCategory() {
-    const articles = await this.getArticles();
-    /** @type {{[category: string]: Article[]}} */
-    const articlesByCategory = articles.reduce((acomulator, article) => {
-      const { category } = article;
-      if (acomulator[category]) {
-        acomulator[category].push(article);
-      } else {
-        // eslint-disable-next-line no-param-reassign
-        acomulator[category] = [article];
-      }
-      return acomulator;
-    }, []);
-    return articlesByCategory;
+  getArticlesByCategory() {
+    return this.getArticles().then((articles) => {
+      /** @type {{[category: string]: Article[]}} */
+      const articlesByCategory = articles.reduce((acomulator, article) => {
+        const { category } = article;
+        if (acomulator[category]) {
+          acomulator[category].push(article);
+        } else {
+          // eslint-disable-next-line no-param-reassign
+          acomulator[category] = [article];
+        }
+        return acomulator;
+      }, []);
+      return articlesByCategory;
+    });
   }
 }
 
