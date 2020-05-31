@@ -1,19 +1,20 @@
 import React from 'react';
 import CarouselItem from '../components/CarouselItem';
 import ViewEspectaculos from '../components/ViewEspectaculos';
+import useInitialState from '../hooks/useInitialState';
 
-const Espectaculos = () => (
-  <div className='Category'>
-    <ViewEspectaculos>
+const APIEspectaculos = 'http://127.0.0.1:8000/api/articles/?q=espectaculos';
 
-      <CarouselItem />
-      <CarouselItem />
-      <CarouselItem />
-      <CarouselItem />
-
+const Espectaculos = () => {
+  const initialStateEspectaculos = useInitialState(APIEspectaculos);
+  return (<div className='Category'>
+    <ViewEspectaculos category='Espectaculos'>
+      {initialStateEspectaculos.map(item =>
+        <CarouselItem key={item.uniqueId} {...item} />
+      )}
     </ViewEspectaculos>
   </div>
-
-);
+  );
+};
 
 export default Espectaculos;

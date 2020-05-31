@@ -24,13 +24,13 @@
     overflow: scroll;
     background-color: #fff;
     border-radius: 10px;
-    padding: 30px 10px 20px 10px;
+    padding: 30px 10px 10px 10px;
     transition: 450ms -webkit-transform;
     transition: 450ms transform;
     transition: 450ms transform, 450ms -webkit-transform;
     font-size: 0;
     white-space: nowrap;
-    margin: 20px 0px;
+    margin: 25px 0px;
   }
   
   .carousel__container:hover .carousel-item {
