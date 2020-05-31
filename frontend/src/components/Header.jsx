@@ -14,7 +14,8 @@ const Header = () => (
     <div className='header__menu'>
       <ul className='header__menu-items'>
         <li className='header__menu-items--item'>
-          Categorías
+
+        <Link to='/categorías'>Categorías</Link>
           <ul className="submenu">
             <li><Link to='/internacional'>Internacional</Link></li>
             <li><Link to='/nacional'>Nacional</Link></li>
@@ -30,6 +31,7 @@ const Header = () => (
         </li>
       </ul>
     </div>
+    
   </header>
 
 );
