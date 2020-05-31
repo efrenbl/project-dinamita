@@ -27,7 +27,7 @@ const News = () => (
     <div className='news__comments'>
       <h3>Comentarios</h3>
 
-      <textarea>
+      <textarea className='news__comments--item'>
         Deja tu comentario
       </textarea>
     </div>

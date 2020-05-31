@@ -14,6 +14,7 @@
 @import "./components/CategoryView";
 @import "./components/SelectCategories";
 @import "./components/News";
+@import "./components/Layout";
 
 
 body {
@@ -21,4 +22,5 @@ body {
     font-family: 'Roboto', sans-serif;
     width: 100%;
     background-color:#8878BF;
+    
 }
