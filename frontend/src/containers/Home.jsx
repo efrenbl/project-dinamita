@@ -22,28 +22,28 @@ const Home = () => {
         {initialStateInternacional.map(item =>
           <CarouselItem key={item.id} {...item} />
         )}
-        <CarouselItemMore />
+        <CarouselItemMore path='/internacional' />
       </Categories>
 
       <Categories category='Nacional' >
         {initialStateNacional.map(item =>
           <CarouselItem key={item.id} {...item} />
         )}
-        <CarouselItemMore />
+        <CarouselItemMore path='nacional' />
       </Categories>
 
       <Categories category='Espectaculos' >
         {initialStateEspectaculos.map(item =>
           <CarouselItem key={item.id} {...item} />
         )}
-        <CarouselItemMore />
+        <CarouselItemMore path='espectaculos' />
       </Categories>
 
       <Categories category='Deportes'>
         {initialStateDeportes.map(item =>
           <CarouselItem key={item.id} {...item} />
         )}
-        <CarouselItemMore />
+        <CarouselItemMore path='deportes' />
       </Categories>
 
     </div>
