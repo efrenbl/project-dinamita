@@ -17,43 +17,57 @@ const Home = () => {
 
   return (
     <div className='Home'>
-
-      {initialStateInternacional.map(item =>
-        <Categories key={item.category} {...item} >
-          {initialStateInternacional.map(item =>
-            <CarouselItem key={item.id} {...item} />
-          )}
+      {initialStateInternacional.map((item) => (
+        <Categories key={item.category} category={item.category}>
+          {initialStateInternacional.map((item) => (
+            <CarouselItem
+              key={item.id}
+              title={item.title}
+              content={item.content}
+            />
+          ))}
           <CarouselItemMore />
         </Categories>
-      )}
+      ))}
 
-      {initialStateNacional.map(item =>
-        <Categories key={item.category} {...item} >
-          {initialStateNacional.map(item =>
-            <CarouselItem key={item.id} {...item} />
-          )}
+      {initialStateNacional.map((item) => (
+        <Categories key={item.category} category={item.category}>
+          {initialStateNacional.map((item) => (
+            <CarouselItem
+              key={item.id}
+              title={item.title}
+              content={item.content}
+            />
+          ))}
           <CarouselItemMore />
         </Categories>
-      )}
+      ))}
 
-      {initialStateFinanzas.map(item =>
-        <Categories key={item.category} {...item} >
-          {initialStateFinanzas.map(item =>
-            <CarouselItem key={item.id} {...item} />
-          )}
+      {initialStateFinanzas.map((item) => (
+        <Categories key={item.category} category={item.category}>
+          {initialStateFinanzas.map((item) => (
+            <CarouselItem
+              key={item.id}
+              title={item.title}
+              content={item.content}
+            />
+          ))}
           <CarouselItemMore />
         </Categories>
-      )}
+      ))}
 
-      {initialStateDeportes.map(item =>
-        <Categories key={item.category} {...item} >
-          {initialStateDeportes.map(item =>
-            <CarouselItem key={item.id} {...item} />
-          )}
+      {initialStateDeportes.map((item) => (
+        <Categories key={item.category} category={item.category}>
+          {initialStateDeportes.map((item) => (
+            <CarouselItem
+              key={item.id}
+              title={item.title}
+              content={item.content}
+            />
+          ))}
           <CarouselItemMore />
         </Categories>
-      )}
-
+      ))}
     </div>
   );
 };
