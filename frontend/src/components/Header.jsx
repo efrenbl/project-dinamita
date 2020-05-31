@@ -5,22 +5,23 @@ const Header = () => (
 
   <header className='header'>
     <div>
-      <p>logo</p>
+      <p>NOTIBOT</p>
     </div>
+   
 
     <div className='header__menu'>
       <ul className='header__menu-items'>
         <li className='header__menu-items--item'>
-          Categorías
-          
+        <Link to='/categorías'>Categorías</Link>
           <ul className="submenu">
       <li><a href="#">Internacional</a></li>
       <li><a href="#">Nacional</a></li>
       <li><a href="#">Deportes</a></li>
       <li><a href="#">Política</a></li>
         </ul>
-
         </li>
+
+       
         <li className='header__menu-items--item'>
           <Link to='/about'>Acerca de</Link>
 
@@ -31,6 +32,7 @@ const Header = () => (
         </li>
       </ul>
     </div>
+    
   </header>
 
 );
