@@ -1,6 +1,6 @@
 .categories__container {
   margin-top: 25px;
-
+  
 }
 .categories__name {
     background: #fff;
@@ -21,6 +21,7 @@
   }
   
   .carousel__container {
+    overflow: scroll;
     background-color: #fff;
     border-radius: 10px;
     padding: 30px 10px 20px 10px;

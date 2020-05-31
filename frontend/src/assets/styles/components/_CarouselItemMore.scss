@@ -15,11 +15,15 @@
             transform-origin: center left;
   }
   
-  .carousel-item__img {
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
+  .carousel-more {
+    width: 35%;
+    position: relative;
+    left: 30%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    transform: translateY(50%);
+    opacity: .3;
   }
   
   .carousel-item__details {
