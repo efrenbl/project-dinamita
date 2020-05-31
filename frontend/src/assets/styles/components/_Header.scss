@@ -1,5 +1,5 @@
 .header {
-  background-color: white;
+  background-color: #0f0740;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -7,7 +7,7 @@
   height: 110px;
 
   &__menu {
-    background-color: white;
+    background-color: #0f0740;
     width: 60%;
     margin: 20px;
 
@@ -17,6 +17,8 @@
       height: 60%;
 
       &--item {
+        background-color: #8878BF;
+        color: white;
         position: relative;
         width: 40%;
         display: flex;
@@ -39,7 +41,7 @@
         }
       }
       a {
-        color: #0f0740;
+        color: white;
         text-decoration: none;
       }
     }
@@ -47,7 +49,7 @@
 }
 
 .login {
-  background-color: #0f0740;
+  background-color: #8878BF;
 
   a {
     color: white;
