@@ -98,7 +98,7 @@ DATABASES = {
         'USER': 'postgres',
         'PASSWORD': 'oligopolio',
         'HOST': 'localhost', 
-        'PORT': 5433,
+        'PORT': 5432,
     }
 }
 
@@ -150,15 +150,15 @@ REST_FRAMEWORK = {
         'rest_framework.permissions.IsAuthenticatedOrReadOnly'
      ],
 
-    # 'DEFAULT_RENDERER_CLASSES': [
-    #     'rest_framework.renderers.JSONRenderer',
-    # ],
-    # 'DEFAULT_PARSER_CLASSES': [
-    #     'rest_framework.parsers.JSONParser',
-    # ]
+    'DEFAULT_RENDERER_CLASSES': [
+        'rest_framework.renderers.JSONRenderer',
+    ],
+    'DEFAULT_PARSER_CLASSES': [
+        'rest_framework.parsers.JSONParser',
+    ]
 
     'DEFAULT_AUTHENTICATION_CLASSES': [
-   'rest_framework.authentication.TokenAuthentication',
+    'rest_framework.authentication.TokenAuthentication',
     'rest_framework.authentication.SessionAuthentication',
     ]
 }
