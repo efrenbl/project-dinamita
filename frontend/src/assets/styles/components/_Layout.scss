@@ -1,0 +1,29 @@
+.layout {
+  display: grid;
+  min-height: 100%;
+  width: 100%;
+  grid-template-columns: 100%;
+  grid-template-rows: 110px auto 100px;
+  grid-template-areas:
+    'header'
+    'content'
+    'footer';
+  background-color: #8878bf;
+
+  > .header {
+    grid-area: header;
+  }
+
+  > .footer {
+    grid-area: footer;
+  }
+
+  > .content {
+    grid-area: content;
+  }
+}
+body,
+html,
+#app {
+  height: 100%;
+}

@@ -5,7 +5,9 @@ const ViewNacional = ({ children, category }) => (
     <div className='category'>
       <section className='carousel'>
         <section className='category__container'>
-          <h2 className='category__name'> {category}</h2>
+          <h2 className='category__name'>
+            {category}
+          </h2>
         </section>
         <div className='category__carousel-container'>
           <section className='carousel'>
