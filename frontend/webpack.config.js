@@ -55,7 +55,7 @@ module.exports = {
   plugins: [
     new webpack.EnvironmentPlugin({
       NODE_ENV: 'development', // use 'development' unless process.env.NODE_ENV is defined
-      API_ENDPOINT: 'http://127.0.0.1:8000/api',
+      API_ENDPOINT: 'http://35.226.85.12:8000/api/articles',
     }),
     new HtmlWebpackPlugin({
       template: './public/index.html',
