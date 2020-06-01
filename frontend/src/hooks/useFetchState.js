@@ -1,26 +1,40 @@
 import { useState, useEffect } from 'react';
 
-/** @typedef {'idle' | 'resolved' | 'error' | 'loading' | 'started'} MachineTypeState */
+/** @typedef {'idle' | 'resolved' | 'canceled' | 'error' | 'loading' | 'started'} MachineTypeState */
 
 /**
  * Hook para solicitar datos de api
- * @template A
- * @param {() => Promise<any>} request La solicitud a llmar
- * @param {A} initialStateData El tipo de estado inicial a poner
- * @returns {{state: MachineTypeState, result: A}}
+ * @type {import('../../types').useFetchState}
  */
 const useFetchState = (request, initialStateData) => {
-  const [data, setData] = useState({ state: 'idle', result: initialStateData });
+  /** @type {{state: MachineTypeState, result: typeof initialStateData}} */
+  const initialState = { state: 'idle', result: initialStateData };
+  const [data, setData] = useState({ ...initialState });
   useEffect(() => {
-    setData({ state: 'started', result: null });
+    let canceled = false;
+    setData({ state: 'started', result: initialStateData });
     request()
       .then((articles) => {
-        setData({ state: 'resolved', result: articles });
+        if (canceled) {
+          // canceled = false;
+          setData({ state: 'canceled', result: initialStateData });
+        } else {
+          setData({ state: 'resolved', result: articles });
+        }
       })
       .catch(() => {
-        setData({ state: 'error', result: null });
+        if (canceled) {
+          // canceled = false;
+          setData({ state: 'canceled', result: initialStateData });
+        } else {
+          setData({ state: 'error', result: initialStateData });
+        }
       });
-    setData({ state: 'loading', result: null });
+    setData({ state: 'loading', result: initialStateData });
+    return () => {
+      console.log('canceling');
+      canceled = true;
+    };
   }, []);
 
   return data;

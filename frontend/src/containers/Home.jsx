@@ -5,10 +5,15 @@ import CarouselItemMore from '../components/CarouselItemMore';
 import { client } from '../client';
 import useFetchState from '../hooks/useFetchState';
 
+/** @typedef {{[category: string]: import('../../types').Article[]}} CategoryMap */
+
 const Home = () => {
-  /** @type {{[category: string]: import('../../types').Article[]}} */
-  const initialState = {};
-  const { state, result } = useFetchState(() => client.getArticlesByCategory(), initialState);
+  /** @type {CategoryMap} */
+  const initialState = Object.freeze({});
+  const { state, result } = useFetchState(
+    () => client.getArticlesByCategory(),
+    initialState,
+  );
   switch (state) {
     case 'idle':
       return <div className='Home'>Pendiente de solicitar</div>;
@@ -32,7 +37,7 @@ const Home = () => {
                     content={item.content}
                   />
                 ))}
-                <CarouselItemMore />
+                <CarouselItemMore path={category} />
               </Categories>
             );
           })}
@@ -42,7 +47,7 @@ const Home = () => {
       return (
         <div className='Home'>
           Error estado desconocido
-          <pre>{{ state, result }}</pre>
+          <pre>{JSON.stringify({ state, result })}</pre>
         </div>
       );
   }
