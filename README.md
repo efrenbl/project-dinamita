@@ -31,10 +31,7 @@ https://docs.google.com/document/d/1bJGyzoZi1Iu7JHNuFyRRLy2fWzEOupVK_5-EZHt9CSc/
 
 
 
-2.- Kickoff
-
-
-1.- Mockup 
+2.- Mockup 
 
 https://www.figma.com/file/dK9oSXMmLFEydEcin7U8rf/Platzi-notices?node-id=0%3A1
 
