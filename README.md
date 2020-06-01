@@ -13,26 +13,39 @@ https://docs.google.com/spreadsheets/d/1fKjObQezazANC6udPG4G0Qb_zTEAN86eh3tyKwUP
 
 ## Team Members and roles 
 
-1.- Claudia Salgado   -Frontend
+##### Claudia Salgado - Frontend
 
-2.- Montserrat Soto    -Data Science
+##### Montserrat Soto - Data Science and Frontend
 
-3.- Silvia Orduña    -DevOps
+##### Silvia Orduña - Frontend and DevOps
 
-4.- Efrén Bautista    -Backend
-
-
-
-## Minutes
-
-1.- Discovery Session
-
-https://docs.google.com/document/d/1bJGyzoZi1Iu7JHNuFyRRLy2fWzEOupVK_5-EZHt9CSc/edit?usp=sharing
-
-
-
-2.- Mockup 
-
-https://www.figma.com/file/dK9oSXMmLFEydEcin7U8rf/Platzi-notices?node-id=0%3A1
+##### Efrén Bautista- Backend and Devops
 
 ## Documentation
+
+### Features
+https://docs.google.com/document/d/1bVVpNStc0X_sR_dgHYEKxcRKtgFrmZTCNUaitdVLOJk/edit?usp=sharing
+
+### User Manual
+https://docs.google.com/document/d/1EZIkw8OxmvSQQTrVDlMEVFrXZ2SrovO3mlQwSJYIgtk/
+
+### Admin Manual
+https://docs.google.com/document/d/1E6bB16d8BI84Z9MT49z7lEqgWEBXtPr_2X7fvEOQR28/
+
+### Notibot API 
+https://documenter.getpostman.com/view/8070054/SztEYS7G
+
+### API in production
+http://35.226.85.12:8000/api/articles/
+
+### URL (Unpublished)
+https://infobot.info
+
+### Actual Development Branch of Frontend
+https://github.com/efrenbl/project-dinamita/tree/frontend
+
+### Actual Development Branch of Backend
+https://github.com/efrenbl/project-dinamita/tree/production
+
+### Actual Development Branch of WebScrapping
+https://github.com/efrenbl/project-dinamita/tree/master
