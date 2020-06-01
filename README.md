@@ -22,6 +22,12 @@ https://docs.google.com/spreadsheets/d/1fKjObQezazANC6udPG4G0Qb_zTEAN86eh3tyKwUP
 
 ## Documentation
 
+### General Documentation
+https://www.notion.so/Notibot-Documentation-e68cc8b2a3c14a07b47be616bc75e5ca
+
+### Mockups 
+https://www.notion.so/Notibot-Mockups-ca9771f795d74da0be8aa01fc8d92529
+
 ### Features
 https://docs.google.com/document/d/1bVVpNStc0X_sR_dgHYEKxcRKtgFrmZTCNUaitdVLOJk/edit?usp=sharing
 
