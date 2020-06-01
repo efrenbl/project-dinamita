@@ -1,8 +1,7 @@
 {
-    "compilerOptions": {
-        "jsx": "react",
-        "baseUrl": "./src",
-        "strict": true,
-        "checkJs": true
-    }
+  "compilerOptions": {
+    "jsx": "react",
+    "baseUrl": "./src",
+    "checkJs": true
+  }
 }

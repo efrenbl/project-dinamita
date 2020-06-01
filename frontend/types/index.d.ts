@@ -3,8 +3,21 @@ export type Article = {
   title: string;
   source: string;
   content: string;
-  category: string
+  category: string;
+  url: string;
+  source: string;
+  publication_date: Date;
 };
+
+export type Comments = {
+  author: number;
+  content: string;
+  publication_date: Date;
+};
+
+export type ArticleWithComments = {
+  comments: Comments[];
+} & Article;
 
 export type MachineTypeState =
   | 'idle'

@@ -8,15 +8,11 @@ const News = ({ title, content, source }) => (
     </header>
 
     <div className='news__content'>
-      <div dangerouslySetInnerHTML={content} />
+      <div>{content}</div>
       <div>
         <p>{`Fuente ${source}`}</p>
       </div>
     </div>
-    <aside className='news__comments'>
-      <h3>Comentarios</h3>
-      <textarea className='news__comments--item'>Deja tu comentario</textarea>
-    </aside>
   </article>
 );
 

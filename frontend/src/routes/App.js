@@ -18,11 +18,10 @@ const App = () => (
         <Route exact path='/register' component={Register} />
         <Route exact path='/about' component={About} />
         <Route exact path='/:category' component={CategorySlug} />
-        <Route exact path='/ContentNew' component={ContentNew} />
+        <Route exact path='/:category/:id' component={ContentNew} />
         <Route component={NotFound} />
       </Switch>
     </Layout>
-
   </BrowserRouter>
 );
 

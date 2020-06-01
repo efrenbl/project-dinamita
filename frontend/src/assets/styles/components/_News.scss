@@ -1,35 +1,32 @@
-
-.news{
- background-color: white;
- height: auto;
-    &__title{
-        text-align: center;
-        font-size: 1.5rem;
-    }
-
-    &__content{
-      
-       width: 70%;
-       margin-left: auto;
-       margin-right: auto;
-       font-size: 1.2rem;
-    }
-
-    &__comments{
-       text-align: center;
-       font-size: 1.2rem;
-
-       &--item{
-
+.news {
+  background-color: white;
+  height: auto;
+  &__title {
     text-align: center;
-    width: 60%;
-    height: 100px;
-    border-radius:15px ;
-    outline: 0 none;
-       }
+    font-size: 1.5rem;
+  }
 
+  &__content {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  &__comments {
+    padding-top: 1rem;
+    text-align: center;
+    background-color: white;
+    font-size: 1.2rem;
+
+    &--item {
+      text-align: center;
+      width: 60%;
+      height: 100px;
+      border-radius: 15px;
+      outline: 0 none;
     }
+  }
 }
-
-
-    

@@ -23,10 +23,7 @@ class Client {
     return fetch(url)
       .then((response) => response.json())
       .catch((error) => {
-        console.error(
-          `Error procesando la petición ${url}`,
-          error,
-        );
+        console.error(`Error procesando la petición ${url}`, error);
         throw error;
       });
   }
@@ -63,6 +60,15 @@ class Client {
       }, []);
       return articlesByCategory;
     });
+  }
+
+  /**
+   * Obtiene un solo artículo de la api por us id
+   * @param {number} id La id del articulo a solicitar
+   * @returns {Promise<import('../types').ArticleWithComments>}
+   */
+  getArticleById(id) {
+    return this.get(`/articles/${id}`);
   }
 }
 

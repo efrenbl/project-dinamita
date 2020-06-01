@@ -12,7 +12,7 @@ const Home = () => {
   const initialState = Object.freeze({});
   const { state, result } = useFetchState(
     () => client.getArticlesByCategory(),
-    initialState,
+    initialState
   );
   switch (state) {
     case 'idle':
@@ -35,6 +35,8 @@ const Home = () => {
                     key={item.id}
                     title={item.title}
                     content={item.content}
+                    category={item.category}
+                    articleId={item.id}
                   />
                 ))}
                 <CarouselItemMore path={category} />
