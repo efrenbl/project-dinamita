@@ -44,7 +44,7 @@ https://documenter.getpostman.com/view/8070054/SztEYS7G
 http://35.226.85.12:8000/api/articles/
 
 ### URL (Unpublished)
-https://infobot.info
+https://notibot.info
 
 ### Actual Development Branch of Frontend
 https://github.com/efrenbl/project-dinamita/tree/frontend
