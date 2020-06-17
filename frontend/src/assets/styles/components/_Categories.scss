@@ -1,43 +1,39 @@
 .categories__container {
   margin-top: 25px;
-
 }
-.categories__name {
-    background: #fff;
+.categories {
+  background: #fff;
+
+  width: 100%;
+  border-radius: 10px;
+  margin: 25px 0px;
+  padding: 30px 10px 10px 10px;
+  &__name {
     color: black;
     font-size: 25px;
-    position: absolute;
     padding-left: 15px;
-    width: 20%;
-
-    text-align: justify;
   }
+}
 
-  .carousel {
-    width: 100%;
-    position: relative;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .carousel__container {
-    background-color: #fff;
-    border-radius: 10px;
-    padding: 30px 10px 20px 10px;
+.carousel {
+  width: 100%;
+  position: relative;
+  &__container {
+    overflow-x: scroll;
     transition: 450ms -webkit-transform;
     transition: 450ms transform;
     transition: 450ms transform, 450ms -webkit-transform;
     font-size: 0;
     white-space: nowrap;
-    margin: 20px 0px;
+
+    &:hover .carousel-item {
+      opacity: 0.3;
+    }
+
+    &:hover .carousel-item:hover {
+      -webkit-transform: scale(1.01);
+      transform: scale(1.01);
+      opacity: 1;
+    }
   }
-  
-  .carousel__container:hover .carousel-item {
-    opacity: 0.3;
-  }
-  
-  .carousel__container:hover .carousel-item:hover {
-    -webkit-transform: scale(1.01);
-            transform: scale(1.01);
-    opacity: 1;
-  }
+}

@@ -1,24 +1,24 @@
-
-@import "./components/Header";
-@import "./components/Footer";
-@import "./components/TitleSection";
-@import "./components/NoticeOfPrivacy";
-@import "./components/MasterAbout";
-@import "./components/TeamAbout";
-@import "./components/Boton";
-@import "./components/Form";
-@import "./components//RegisterForm";
-@import "./components//Categories";
-@import "./components/CarouselItem";
-@import "./components/NotFound";
-@import "./components/CategoryView";
-@import "./components/SelectCategories";
-
+@import './components/Header';
+@import './components/Footer';
+@import './components/TitleSection';
+@import './components/NoticeOfPrivacy';
+@import './components/MasterAbout';
+@import './components/TeamAbout';
+@import './components/Boton';
+@import './components/Form';
+@import './components//RegisterForm';
+@import './components//Categories';
+@import './components/CarouselItem';
+@import './components/NotFound';
+@import './components/CategoryView';
+@import './components/SelectCategories';
+@import './components/News';
+@import './components/Layout';
+@import './components/CarouselItemMore';
 
 body {
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
-    width: 100%;
-    background-color: #EAEDED;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  width: 100%;
+  // background-color:#8878BF;
 }
-
